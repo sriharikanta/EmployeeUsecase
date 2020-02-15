@@ -13,6 +13,13 @@ public class Employees {
 	private String employeeName;
 	private String address;
 	private Integer salary;
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	private String location;
 	public Integer getEmployeeId() {
 		return employeeId;
 	}
@@ -40,7 +47,7 @@ public class Employees {
 	@Override
 	public String toString() {
 		return "Employees [employeeId=" + employeeId + ", employeeName=" + employeeName + ", address=" + address
-				+ ", salary=" + salary + "]";
+				+ ", salary=" + salary + ", location=" + location + "]";
 	}
 
 	
